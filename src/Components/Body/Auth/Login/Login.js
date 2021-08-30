@@ -1,11 +1,11 @@
 import React from 'react'
 
-function MainBody() {
+function Login() {
     return (
         <div>
-            <h1>I am body</h1>
+            I am 
         </div>
     )
 }
 
-export default MainBody;
+export default Login

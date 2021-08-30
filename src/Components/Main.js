@@ -1,5 +1,5 @@
 import React from 'react';
-import Mainbody from './Body/Mainbody';
+import Body from './Body/Body';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
@@ -7,10 +7,10 @@ function Main() {
     return (
         <div>
             <Header />
-            <Mainbody />
+            <Body />
             <Footer />
         </div>
     )
 }
 
-export default Main
+export default Main;
