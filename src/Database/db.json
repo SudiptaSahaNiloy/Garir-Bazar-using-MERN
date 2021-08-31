@@ -1,0 +1,22 @@
+{
+  "Customer": [
+    {
+      "Name": "Sudipta Saha Niloy",
+      "Email": "niloy305968@gmail.com",
+      "Password": "bangladesh",
+      "ConfirmPassword": "bangladesh",
+      "CurrentAddress": "asd",
+      "NID": "123234",
+      "id": 1
+    },
+    {
+      "Name": "Laxmi Rani  Saha",
+      "Email": "laxmi@gmail.com",
+      "Password": "bangladesh",
+      "ConfirmPassword": "bangladesh",
+      "CurrentAddress": "sssss",
+      "NID": "111111111",
+      "id": 2
+    }
+  ]
+}

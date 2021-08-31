@@ -1,7 +1,16 @@
 import { Formik } from 'formik';
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Button, Form, FormGroup, Input, Col, Row, Alert } from 'reactstrap';
+import { auth, userData } from '../../../Redux/authActionCreator';
 import './Stylesheet/Auth.css';
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        userData: (values) => dispatch(userData(values)),
+        auth: (email, password) => dispatch(auth(email, password))
+    }
+}
 
 class Auth extends Component {
     state = {
@@ -176,16 +185,14 @@ class Auth extends Component {
 
                             onSubmit={
                                 (values) => {
-                                    // // signIn
-                                    // this.props.auth(values.email, values.password, this.state.authMode);
+                                    // signIn
+                                    this.props.auth(values.email, values.password);
 
-                                    // // signUp
-                                    // if (this.state.authMode === 'signUp') {
-                                    //     setTimeout(() => {
-                                    //         this.props.updateUserData(values.firstName, values.lastName);
-                                    //     }, 1000);
-                                    // }
-                                    console.log(values);
+                                    // signUp
+                                    if (this.state.authMode === 'signUp') {
+                                        this.props.userData(values);
+                                    }
+                                    // console.log(values);
                                 }
                             }
 
@@ -241,4 +248,4 @@ class Auth extends Component {
 
 }
 
-export default Auth;
+export default connect(null, mapDispatchToProps)(Auth);
