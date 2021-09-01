@@ -4,7 +4,7 @@ import './Stylesheet/Companies.css';
 function Companies() {
     return (
         <div>
-            I am company
+            AUdi
         </div>
     )
 }
