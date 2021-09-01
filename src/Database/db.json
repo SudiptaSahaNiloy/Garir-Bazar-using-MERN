@@ -17,6 +17,38 @@
       "CurrentAddress": "sssss",
       "NID": "111111111",
       "id": 2
+    },
+    {
+      "Name": "Sudipta Saha Niloy",
+      "Email": "niloy305968@gmail.com",
+      "Password": "bangladesh",
+      "CurrentAddress": "asd",
+      "NID": "asdasdwdasdwads",
+      "id": 3
+    },
+    {
+      "Name": "Nani Gopal Saha",
+      "Email": "nani@gmail.com",
+      "Password": "bangladesh",
+      "CurrentAddress": "aaaaaaaaaaaaaa",
+      "NID": "1111111111111111",
+      "id": 4
+    },
+    {
+      "Name": "Sourav Saha  Nipun",
+      "Email": "nipun@gmail.com",
+      "Password": "bangladesh",
+      "CurrentAddress": "hhhhhhhhhhhhh",
+      "NID": "555555555555",
+      "id": 5
+    },
+    {
+      "Name": "Fahim hossian",
+      "Email": "fahim@gmail.com",
+      "Password": "abc1234",
+      "CurrentAddress": "ctg",
+      "NID": "123456789",
+      "id": 6
     }
   ]
 }

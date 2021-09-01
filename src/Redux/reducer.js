@@ -1,12 +1,11 @@
 import * as actionTypes from "./actionTypes";
 
 const INITIAL_STATE = {
-    displayName: null,
     images: [],
     comments: [],
     category: null,
-    idToken: null,
-    localId: null,
+    customerId: null,
+    customerName: null,
     errorMsg: null,
 }
 
@@ -15,6 +14,7 @@ export const reducer = (state = INITIAL_STATE, action) => {
         case actionTypes.AUTH_SUCCESS:
             return {
                 ...state,
+                customerName: action.payload.customerName,
             }
         case actionTypes.AUTH_FAILED:
             return {

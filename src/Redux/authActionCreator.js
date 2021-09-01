@@ -1,23 +1,21 @@
 import axios from "axios";
 import * as actionTypes from "./actionTypes.js";
 
-// export const authSuccess = (idToken, localId) => {
-//     return ({
-//         type: actionTypes.AUTH_SUCCESS,
-//         payload: {
-//             idToken: idToken,
-//             localId: localId,
-//         },
-//     })
-// }
+export const authSuccess = (customerName) => {
+    // console.log(customerName);
+    return ({
+        type: actionTypes.AUTH_SUCCESS,
+        payload: {
+            customerName: customerName,
+        },
+    })
+}
 
-// export const authLogout = () => {
-//     localStorage.removeItem('idToken');
-//     localStorage.removeItem('expirationTime');
-//     localStorage.removeItem('localId');
-//     localStorage.removeItem('displayName');
-//     return ({ type: actionTypes.AUTH_LOGOUT });
-// }
+export const authLogout = () => {
+    localStorage.removeItem('CustomerName');
+    localStorage.removeItem('CustomerId');
+    return ({ type: actionTypes.AUTH_LOGOUT });
+}
 
 // export const authFailed = (errMsg) => {
 //     return {
@@ -32,9 +30,11 @@ export const auth = (email, password) => dispatch => {
     axios.get(URL)
         .then(response => {
             response.data.map((item, id) => {
-                if(item.Email === email && item.Password === password){
-                    console.log(response.data[id]);
-                    localStorage.setItem('Name', response.data[id].Name)
+                if (item.Email === email && item.Password === password) {
+                    // console.log(response.data[id]);
+                    localStorage.setItem('CustomerId', response.data[id].id);
+                    localStorage.setItem('CustomerName', response.data[id].Name);
+                    dispatch(authSuccess(response.data[id].Name));
                 }
             })
         })
@@ -46,26 +46,16 @@ export const auth = (email, password) => dispatch => {
     // })
 }
 
-// // remember me section. Used to stay logged in
-// export const authCheck = () => dispatch => {
-//     const token = localStorage.getItem('idToken');
-//     const expirationTime = new Date(localStorage.getItem('expirationTime'));
-//     const userId = localStorage.getItem('localId');
-//     const userName = localStorage.getItem('displayName');
-//     if (!token) {
-//         // logout
-//         dispatch(authLogout());
-//     } else {
-
-//         if (expirationTime <= new Date()) {
-//             // logout 
-//             dispatch(authLogout());
-//         } else {
-//             dispatch(authSuccess(token, userId));
-//             dispatch(displayName(userName));
-//         }
-//     }
-// }
+// remember me section. Used to stay logged in
+export const authCheck = () => dispatch => {
+    const userName = localStorage.getItem('CustomerName');
+    if (userName === null) {
+        // logout
+        dispatch(authLogout());
+    } else {
+        dispatch(authSuccess(userName));
+    }
+}
 
 // const displayName = (userName) => {
 //     return {
@@ -91,7 +81,7 @@ export const userData = (values) => dispatch => {
     const URL = 'http://localhost:3001/Customer';
     axios.post(URL, userData)
         .then(response => {
-            console.log(response.data);
+            dispatch(authSuccess(userData.Name))
         })
 }
 
