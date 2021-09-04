@@ -1,3 +1,14 @@
-.h1_tag > h1{
-    color: red;
+.Caption {
+    margin-bottom: 300px;
+    text-align: center;
+}
+.button{
+    background-color: rgb(19, 14, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: darkgrey;
+}
+h1{
+    color: azure;
+    position: center;
 }
