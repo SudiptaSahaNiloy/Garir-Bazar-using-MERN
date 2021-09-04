@@ -9,6 +9,9 @@
     text-decoration: darkgrey;
 }
 h1{
-    color: azure;
+    color:wheat;
     position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    
 }

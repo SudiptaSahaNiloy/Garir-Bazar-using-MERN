@@ -26,7 +26,7 @@ function Companies() {
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100"
-      src="https://wallpapercave.com/wp/wp8503921.jpg"
+      src="https://wallpaperaccess.com/full/1867214.jpg"
       alt="Toyota"
     />
     <Carousel.Caption className="Caption">
