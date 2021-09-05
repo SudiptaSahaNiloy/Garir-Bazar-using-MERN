@@ -5,6 +5,7 @@ import Companies from './Companies/Companies';
 import Auth from './Auth/Auth';
 import audiHome from './Companies/audiHome/audiHome';
 import toyotaHome from './Companies/toyotaHome/toyotaHome';
+import CarDetails from './CarDetails/CarDetails';
 
 function Body() {
     return (
@@ -15,6 +16,7 @@ function Body() {
                 <Route path="/companies" exact component={Companies} />
                 <Route path="/audiHome" exact component={audiHome} />
                 <Route path="/toyotaHome" exact component={toyotaHome} />
+                <Route path="/carDetails" exact component={CarDetails} />
                 <Redirect to="/home" />
                 {/* <Redirect to="/login" /> */}
             </Switch>

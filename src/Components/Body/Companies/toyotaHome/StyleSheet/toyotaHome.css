@@ -1,13 +1,13 @@
 .Caption2 {
-    margin-top: 3px;
+    margin: bottom 3px;;
     text-align: center;
 }
 .button2{
-    background-color: rgba(9, 239, 255, 0.521);
-    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 50px;
-    text-decoration: burlywood;
+    font-size: 30px;
+    text-decoration: rgb(243, 241, 237);
 }
 .carousel-fade{
     transition: opacity 0s 2.6s;

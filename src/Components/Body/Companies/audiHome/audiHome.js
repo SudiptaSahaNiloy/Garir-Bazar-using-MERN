@@ -4,8 +4,8 @@ import Button from 'react-bootstrap/Button'
 import Carousel from 'react-bootstrap/Carousel'
 
 function audiHome() {
-    return (
-        <Carousel className="carousel-fade">
+  return (
+    <Carousel className="carousel-fade">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -13,7 +13,7 @@ function audiHome() {
           alt="Audi"
         />
         <Carousel.Caption className="Caption1" >
-          <Button href="#" className="button1" variant="primary" size="lg">Audi A4 Avant g-tron</Button>
+          <Button href="/carDetails" className="button1" variant="primary" size="lg">Audi A4 Avant g-tron</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -22,12 +22,14 @@ function audiHome() {
           src="Images\a3.jpg"
           alt="Toyota"
         />
+
         <Carousel.Caption className="Caption1">
-          <Button href="/toyotaHome" className="button1" variant="primary" size="lg">Audi A3 Sedan</Button>
+          <Button href="/carDetails" className="button1" variant="primary" size="lg">Audi A3 Sedan</Button>
+
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    )
+  )
 }
 
 export default audiHome
