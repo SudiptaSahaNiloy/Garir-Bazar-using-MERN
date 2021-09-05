@@ -2,17 +2,20 @@
     margin-bottom: 300px;
     text-align: center;
 }
-.button{
+
+.button {
     background-color: rgb(19, 14, 10);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     text-decoration: darkgrey;
 }
-h1{
-    color:wheat;
+
+h1 {
+    color: wheat;
     position: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+
     
 }
 .carousel-fade{
