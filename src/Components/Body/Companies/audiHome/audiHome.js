@@ -22,8 +22,8 @@ function audiHome() {
           src="Images\a3.jpg"
           alt="Toyota"
         />
-        <Carousel.Caption className="Caption">
-          <Button href="/toyotaHome" className="button" variant="primary" size="lg">Audi A3 Sedan</Button>
+        <Carousel.Caption className="Caption1">
+          <Button href="/toyotaHome" className="button1" variant="primary" size="lg">Audi A3 Sedan</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
