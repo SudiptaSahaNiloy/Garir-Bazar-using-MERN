@@ -7,8 +7,8 @@ import Carousel from 'react-bootstrap/Carousel'
 function Companies() {
 
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
+    <Carousel className="carousel-fade">
+      <Carousel.Item>
         <img
           className="d-block w-100"
           src="Images/audiHome.webp"
@@ -20,7 +20,7 @@ function Companies() {
           <Button href="/audiHome" className="button" variant="primary" size="lg">Ride With AUDI</Button>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item>
         <img
           className="d-block w-100"
           src="Images/toyotaHome.jpg"

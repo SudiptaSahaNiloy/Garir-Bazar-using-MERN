@@ -15,3 +15,6 @@ h1{
     font-weight: bolder;
     
 }
+.carousel-fade{
+    transition: opacity 0s 2.6s;
+}

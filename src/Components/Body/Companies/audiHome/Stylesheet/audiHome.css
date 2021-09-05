@@ -1,0 +1,14 @@
+.Caption {
+    margin-bottom: 600px;
+    text-align: center;
+}
+.button{
+    background-color: rgba(9, 239, 255, 0.521);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: burlywood;
+}
+.carousel-fade{
+    transition: opacity 0s 2.6s;
+}
