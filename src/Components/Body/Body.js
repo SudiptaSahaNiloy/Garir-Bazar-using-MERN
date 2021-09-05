@@ -3,9 +3,9 @@ import { Redirect, Route, Switch } from 'react-router';
 import Home from './Home/Home';
 import Companies from './Companies/Companies';
 import Auth from './Auth/Auth';
-import audiHome from './Companies/audiHome/audiHome';
-import toyotaHome from './Companies/toyotaHome/toyotaHome';
-import CarDetails from './CarDetails/CarDetails';
+import audiHome from './Companies/audiHome/audiHome.js';
+import toyotaHome from './Companies/toyotaHome/toyotaHome.js';
+import CarDetails from './CarDetails/CarDetails.js';
 
 function Body() {
     return (

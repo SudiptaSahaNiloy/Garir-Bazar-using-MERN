@@ -1,0 +1,89 @@
+.background_section {
+    /* The image used */
+    /* background-image: url("https://wallpaperaccess.com/full/916613.png"); */
+    /* Full height */
+    /* height: 100%; */
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-color: black;
+}
+
+.carousel-section {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.carName_Section {
+    /* background-color: red; */
+    padding: 0rem 10rem;
+}
+
+.carName_Section>h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: monospace;
+    color: white;
+    padding-top: 6rem;
+    font-size: 50px;
+}
+
+.carName_Section>h2 {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    margin-bottom: 5rem;
+    padding-top: 6rem;
+    font-size: 50px;
+}
+
+.carName_Section>p {
+    text-align: center;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.carInfo_section {
+    padding: 10rem;
+}
+
+.iframe-container {
+    height: 100%;
+}
+
+.iframe-container>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.table_section {
+    /* position: static; */
+}
+
+.table_section>h1 {
+    text-align: left;
+    font-weight: bold;
+    font-family: monospace;
+    color: rgba(243, 230, 172, 0.918);
+    font-size: 50px;
+}
+
+.table_section>p {
+    color: white;
+    text-decoration: slategray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.table_section>td {
+    font-weight: bold;
+}
+
+td {
+    color: white;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+}
