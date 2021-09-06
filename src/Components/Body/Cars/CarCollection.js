@@ -23,9 +23,16 @@ class CarCollection extends Component {
     }
 
     render() {
-        let brandCars = null;
+        const { state } = this.props.location;
 
-        brandCars = this.props.totalCars.map((item) => {
+        let brandedCarStock = null;
+        let brandedCars = null;
+
+        brandedCars = this.props.totalCars.filter((item) => {
+            return state[0].Brand === item.Brand;
+        })
+
+        brandedCarStock = brandedCars.map((item) => {
             return (
                 <Cars id={item.id} key={item.id} Name={item.Name} Price={item.Price} Image={item.Image} />
             )
@@ -33,7 +40,7 @@ class CarCollection extends Component {
 
         return (
             <div>
-                {brandCars}
+                {brandedCarStock}
             </div>
         )
     }

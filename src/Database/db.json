@@ -53,12 +53,11 @@
   ],
   "CarCollection": [
     {
-      "Name": "Audi Car 3",
-      "Price": "939219",
+      "Name": "Audi A4 Avant g-tron",
+      "Price": "45636436",
       "Brand": "Audi",
-      "Engine type": "Inline 4-cylinder engine",
-      "Image": "Images/audi3.jpg",
-      "id": 3
+      "Image": "Images/audi1.jpg",
+      "id": 1
     },
     {
       "Name": "Audi Car 2",
@@ -68,14 +67,31 @@
       "id": 2
     },
     {
-      "Name": "Audi A4 Avant g-tron",
-      "Price": "45636436",
+      "Name": "Audi Car 3",
+      "Price": "939219",
       "Brand": "Audi",
-      "Image": "Images/audi1.jpg",
-      "id": 1
+      "Engine type": "Inline 4-cylinder engine",
+      "Image": "Images/audi3.jpg",
+      "id": 3
+    },
+    {
+      "Name": "Toyota Car 1",
+      "Price": "563626",
+      "Brand": "Toyota",
+      "Engine type": "Inline 4-cylinder engine",
+      "Image": "Images/toyotaHome.jpg",
+      "id": 4
+    },
+    {
+      "Name": "Toyota Car 2",
+      "Price": "1241462",
+      "Brand": "Toyota",
+      "Engine type": "Inline 4-cylinder engine",
+      "Image": "Images/allion.jpg",
+      "id": 5
     }
   ],
-  "Dealer":[
+  "Dealer": [
     {
       "Name": "Fahim hossian",
       "PhoneNumber": "01749450739",

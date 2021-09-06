@@ -1,21 +1,38 @@
 import React from 'react';
 import './stylesheet/CarDetails.css';
 import { Carousel, Table } from 'react-bootstrap';
-import { Col, Row } from 'reactstrap';
+import { Button, Col, Row } from 'reactstrap';
 import { connect } from 'react-redux';
 import { Component } from 'react';
+import { Car } from '../../../Redux/actionCreators';
+import { Link } from 'react-router-dom';
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        Car: () => dispatch(Car()),
+    }
+}
 
 const mapStateToProps = (State) => {
-    return{
-        // selectedCar: State.selectedCar,
+    return {
+        totalCars: State.carCollection,
     }
 }
 
 class CarDetails extends Component {
-    render(){
-        // const { state } = this.props.location;
+    componentDidMount() {
+        this.props.Car();
+    }
+    render() {
+        const { state } = this.props.location;
 
-        console.log(this.props.location);
+        let selectedCar = null;
+
+        selectedCar = this.props.totalCars.filter((item) => {
+            return item.id === state[0].id
+        })
+
+        // console.log(selectedCar[0]);
         return (
             <div className="background_section">
                 <Row>
@@ -30,7 +47,6 @@ class CarDetails extends Component {
                                 />
                                 <Carousel.Caption>
                                     <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -42,7 +58,6 @@ class CarDetails extends Component {
 
                                 <Carousel.Caption>
                                     <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             {/* <Carousel.Item>
@@ -62,9 +77,15 @@ class CarDetails extends Component {
                     <Col>
                         {/* Car Name Section */}
                         <div className="carName_Section">
-                            <h1>Audi A4 Avant g-tron</h1>
-                            <h2>Price: BDT 4372773.04 </h2>
-                            {/* <Button>Get Your Own</Button> */}
+                            <h1>{selectedCar[0].Name}</h1>
+                            <h2>Price: BDT {selectedCar[0].Price} </h2>
+                            <Link
+                                to={{
+                                    pathname: "/billingPage",
+                                    state: [{ id: selectedCar[0].id }]
+                                }}>
+                                <Button className="button" variant="primary" size="lg">Get Yours Now</Button>
+                            </Link>
                             <p>Audi natural gas models combine ecology and economy: The Audi A4 Avant g-tron and A5 Sportback g-tron feature a new, sporty design and a state-of-the-art touch operating concept.</p>
                             <br />
                             <p>Audi A4 Avant g-tron: CNG consumption in kg/100 km: 4.1 -3.9; combined CO2 emissions in g/km (CNG): 113-105 Information on fuel/electricity consumption and CO2 emissions in ranges depending on the used combination of wheels/tires</p>
@@ -130,7 +151,7 @@ class CarDetails extends Component {
             </div >
         )
     }
-   
+
 }
 
-export default connect(mapStateToProps)(CarDetails)
+export default connect(mapStateToProps, mapDispatchToProps)(CarDetails)

@@ -1,8 +1,8 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Stylesheet/Companies.css'
-import Button from 'react-bootstrap/Button'
-import Carousel from 'react-bootstrap/Carousel'
+import './Stylesheet/Companies.css';
+import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 function Companies() {
 
@@ -17,7 +17,13 @@ function Companies() {
         <Carousel.Caption className="Caption" >
           <h1>WELCOME TO OUR AUDI COLLECTION</h1>
           <p>Lets take a ride</p>
-          <Button href="/carCollection" className="button" variant="primary" size="lg">Ride With AUDI</Button>
+          <Link
+            to={{
+              pathname: "/carCollection",
+              state: [{ Brand: "Audi" }]
+            }}>
+            <Button className="button" variant="primary" size="lg">Ride With AUDI</Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,7 +35,13 @@ function Companies() {
         <Carousel.Caption className="Caption">
           <h1>WELCOME TO OUR TOYOTA COLLECTION</h1>
           <p>Lets take a ride</p>
-          <Button href="/carCollection" className="button" variant="primary" size="lg">Ride With Toyota</Button>
+          <Link
+            to={{
+              pathname: "/carCollection",
+              state: [{ Brand: "Toyota" }]
+            }}>
+            <Button className="button" variant="primary" size="lg">Ride With TOYOTA</Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -44,9 +44,8 @@ class Cars extends Component {
                         <Link
                             to={{
                                 pathname: "/carDetails",
-                                state: [{ id: this.props.id, Name: this.props.Name, Image: this.props.Image}] // your data array of objects
-                            }}
-                        >
+                                state: [{ id: this.props.id, Name: this.props.Name, Image: this.props.Image }]
+                            }}>
                             <Button>View Details</Button>
                         </Link>
                     </div>
