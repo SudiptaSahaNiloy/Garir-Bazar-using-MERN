@@ -50,5 +50,28 @@
       "NID": "123456789",
       "id": 6
     }
+  ],
+  "CarCollection": [
+    {
+      "Name": "Audi Car 3",
+      "Price": "939219",
+      "Brand": "Audi",
+      "Image": "Images/audi3.jpg",
+      "id": 3
+    },
+    {
+      "Name": "Audi Car 2",
+      "Price": "6346324",
+      "Brand": "Audi",
+      "Image": "Images/audi2.jpg",
+      "id": 2
+    },
+    {
+      "Name": "Audi Car 1",
+      "Price": "45636436",
+      "Brand": "Audi",
+      "Image": "Images/audi1.jpg",
+      "id": 1
+    }
   ]
 }
