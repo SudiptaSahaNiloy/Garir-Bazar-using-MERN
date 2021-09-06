@@ -56,6 +56,7 @@
       "Name": "Audi Car 3",
       "Price": "939219",
       "Brand": "Audi",
+      "Engine type": "Inline 4-cylinder engine",
       "Image": "Images/audi3.jpg",
       "id": 3
     },
@@ -67,11 +68,19 @@
       "id": 2
     },
     {
-      "Name": "Audi Car 1",
+      "Name": "Audi A4 Avant g-tron",
       "Price": "45636436",
       "Brand": "Audi",
       "Image": "Images/audi1.jpg",
       "id": 1
+    }
+  ],
+  "Dealer":[
+    {
+      "Name": "Fahim hossian",
+      "PhoneNumber": "01749450739",
+      "model": "Audi",
+      "id": "1"
     }
   ]
 }

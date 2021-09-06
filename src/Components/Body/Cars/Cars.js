@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { selectedCar } from '../../../Redux/actionCreators';
 import './stylesheet/Cars.css';
@@ -7,7 +8,7 @@ import './stylesheet/Cars.css';
 const mapStateToProps = (State) => {
     return {
         carDetails: State.carDetails,
-        car: State.selectedCar,
+        wantedCar: State.selectedCar,
     }
 }
 
@@ -23,10 +24,11 @@ class Cars extends Component {
     }
 
     render() {
+        // console.log(this.props.wantedCar);
         return (
             <div className="cars">
                 <img
-                    onClick={() => this.handleOnClick()}
+                    onClick={() => this.handleOnClick(this.props)}
                     src={this.props.Image}
                     alt="" />
                 <div className="cars_info">
@@ -39,7 +41,14 @@ class Cars extends Component {
                         <div className="cars_price">
                             <h2>Price: BDT {this.props.Price}</h2>
                         </div>
-                        <Button href="/carDetails" onClick={() => this.handleOnClick(this.props)}>View Details</Button>
+                        <Link
+                            to={{
+                                pathname: "/carDetails",
+                                state: [{ id: this.props.id, Name: this.props.Name, Image: this.props.Image}] // your data array of objects
+                            }}
+                        >
+                            <Button>View Details</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

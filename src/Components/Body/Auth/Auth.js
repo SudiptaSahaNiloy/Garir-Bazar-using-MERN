@@ -1,9 +1,15 @@
 import { Formik } from 'formik';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button, Form, FormGroup, Input, Col, Row} from 'reactstrap';
+import { Button, Form, FormGroup, Input, Col, Row } from 'reactstrap';
 import { auth, userData } from '../../../Redux/authActionCreator';
 import './Stylesheet/Auth.css';
+
+const mapStateToProps = (State) => {
+    return {
+        selectedCar: State.selectedCar,
+    }
+}
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -18,6 +24,7 @@ class Auth extends Component {
     }
 
     render() {
+        console.log(this.props.selectedCar);
         const signUpForm = (values, handleChange, handleSubmit, errors) => {
             return (
                 <Form onSubmit={handleSubmit}>
@@ -248,4 +255,4 @@ class Auth extends Component {
 
 }
 
-export default connect(null, mapDispatchToProps)(Auth);
+export default connect(mapStateToProps, mapDispatchToProps)(Auth);
