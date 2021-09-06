@@ -17,7 +17,7 @@ function Companies() {
         <Carousel.Caption className="Caption" >
           <h1>WELCOME TO OUR AUDI COLLECTION</h1>
           <p>Lets take a ride</p>
-          <Button href="/audiHome" className="button" variant="primary" size="lg">Ride With AUDI</Button>
+          <Button href="/carCollection" className="button" variant="primary" size="lg">Ride With AUDI</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,7 +29,7 @@ function Companies() {
         <Carousel.Caption className="Caption">
           <h1>WELCOME TO OUR TOYOTA COLLECTION</h1>
           <p>Lets take a ride</p>
-          <Button href="/toyotaHome" className="button" variant="primary" size="lg">Ride With Toyota</Button>
+          <Button href="/carCollection" className="button" variant="primary" size="lg">Ride With Toyota</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

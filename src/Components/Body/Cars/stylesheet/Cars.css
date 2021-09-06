@@ -1,0 +1,53 @@
+.cars {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.cars>img:hover {
+    box-shadow: 5px 5px 4px black;
+}
+
+.cars>img {
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cars_info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding-left: 20px;
+}
+
+.cars_infoTop {
+    margin-top: 5rem;
+    width: 40vw;
+}
+
+.cars_infoTop>h3 {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.cars_infoTop>p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: gray;
+}
+
+.cars_infoBottom {
+    display: flex;
+    margin-top: 115px;
+}
+
+.cars_price {
+    /* position: absolute;
+    bottom: 20px;
+    right: 30px; */
+    margin-right: 1rem;
+}

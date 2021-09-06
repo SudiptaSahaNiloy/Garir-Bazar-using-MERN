@@ -1,7 +1,7 @@
 import React from 'react';
 import './stylesheet/CarDetails.css';
 import { Carousel } from 'react-bootstrap';
-import { Col, Row } from 'reactstrap';
+import { Button, Col, Row } from 'reactstrap';
 
 function CarDetails() {
     return (
@@ -52,6 +52,7 @@ function CarDetails() {
                     <div className="carName_Section">
                         <h1>Audi A4 Avant g-tron</h1>
                         <h2>Price: BDT 4372773.04 </h2>
+                        {/* <Button>Get Your Own</Button> */}
                         <p>Audi natural gas models combine ecology and economy: The Audi A4 Avant g-tron and A5 Sportback g-tron feature a new, sporty design and a state-of-the-art touch operating concept.</p>
                         <br />
                         <p>Audi A4 Avant g-tron: CNG consumption in kg/100 km: 4.1 -3.9; combined CO2 emissions in g/km (CNG): 113-105 Information on fuel/electricity consumption and CO2 emissions in ranges depending on the used combination of wheels/tires</p>

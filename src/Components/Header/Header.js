@@ -31,7 +31,7 @@ class Header extends Component {
             })
         };
 
-        console.log(this.props.customerName);
+        // console.log(this.props.customerName);
 
         return (
             <Navbar className="navbar-section" color="dark" dark expand="md" >
