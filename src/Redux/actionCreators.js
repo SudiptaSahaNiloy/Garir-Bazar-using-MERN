@@ -9,6 +9,13 @@ export const loadCars = (cars) => {
     }
 }
 
+export const selectedCar = (car) => {
+    return {
+        type: actionTypes.SELECTED_CAR,
+        payload: car,
+    }
+}
+
 export const Car = () => dispatch => {
     // console.log("loadcars");
     axios.get('http://localhost:3001/CarCollection')

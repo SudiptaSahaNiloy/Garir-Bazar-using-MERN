@@ -8,6 +8,7 @@ const INITIAL_STATE = {
     customerName: null,
     errorMsg: null,
     carCollection: [],
+    selectedCar: null,
 }
 
 export const reducer = (state = INITIAL_STATE, action) => {
@@ -31,6 +32,11 @@ export const reducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 carCollection: action.payload,
+            }
+        case actionTypes.SELECTED_CAR:
+            return {
+                ...state,
+                selectedCar: action.payload,
             }
         // case actionTypes.LOAD_USER_DATA:
         //     return {

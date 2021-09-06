@@ -1,7 +1,7 @@
 import React from 'react';
 import './stylesheet/CarDetails.css';
 import { Carousel } from 'react-bootstrap';
-import { Button, Col, Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 
 function CarDetails() {
     return (

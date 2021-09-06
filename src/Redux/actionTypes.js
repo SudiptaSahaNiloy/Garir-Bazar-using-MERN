@@ -4,3 +4,4 @@ export const AUTH_LOADING = 'AUTH_LOADING';
 export const AUTH_LOGOUT = 'AUTH_LOGOUT';
 
 export const LOAD_CARS = 'LOAD_CARS';
+export const SELECTED_CAR = 'SELECTED_CAR';

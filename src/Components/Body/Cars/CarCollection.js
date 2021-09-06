@@ -27,7 +27,7 @@ class CarCollection extends Component {
 
         brandCars = this.props.totalCars.map((item) => {
             return (
-                <Cars id={item.id} Name={item.Name} Price={item.Price} Image={item.Image} />
+                <Cars key={item.id} Name={item.Name} Price={item.Price} Image={item.Image} />
             )
         })
 
