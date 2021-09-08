@@ -10,7 +10,7 @@ function Home() {
             <div className="jumbotron">
                 <img src="Images/Banner.jpg" alt="" />
                 <h1>Welcome To Garir Bazar</h1>
-                <p>Find you next match</p>
+                <p>Find you next match...</p>
             </div>
 
             <Carousel>

@@ -9,19 +9,19 @@
 
 .jumbotron>h1 {
     position: absolute;
-    font-weight: 900;
-    font-size: 90px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    top: 18px;
-    left: 15%;
+    font-weight: 700;
+    font-size: 80px;
+    font-family: 'Allison', cursive;
+    top: 300px;
+    left: 40%;
     color: #58EBFD;
 }
 
 .jumbotron>p {
     position: absolute;
-    top: 200px;
-    left: 16px;
-    font-size: 80px;
+    top: 190px;
+    left: 30rem;
+    font-size: 40px;
     color: white;
 }
 

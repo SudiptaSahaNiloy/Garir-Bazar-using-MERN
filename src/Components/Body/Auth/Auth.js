@@ -5,12 +5,6 @@ import { Button, Form, FormGroup, Input, Col, Row } from 'reactstrap';
 import { auth, userData } from '../../../Redux/authActionCreator';
 import './Stylesheet/Auth.css';
 
-const mapStateToProps = (State) => {
-    return {
-        selectedCar: State.selectedCar,
-    }
-}
-
 const mapDispatchToProps = (dispatch) => {
     return {
         userData: (values) => dispatch(userData(values)),
@@ -24,7 +18,6 @@ class Auth extends Component {
     }
 
     render() {
-        console.log(this.props.selectedCar);
         const signUpForm = (values, handleChange, handleSubmit, errors) => {
             return (
                 <Form onSubmit={handleSubmit}>
@@ -255,4 +248,4 @@ class Auth extends Component {
 
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Auth);
+export default connect(null, mapDispatchToProps)(Auth);

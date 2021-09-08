@@ -1,0 +1,26 @@
+.background {
+    background-color: black;
+}
+
+.cards {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card_section:hover {
+    width: 410px;
+    height: 410px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.card_section {
+    width: 400px;
+    height: 400px;
+    margin: 0;
+}
+
+.cardBody_section_title {
+    padding-top: 4rem;
+    text-decoration: none;
+}

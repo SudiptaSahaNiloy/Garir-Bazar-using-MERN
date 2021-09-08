@@ -32,7 +32,6 @@ class CarDetails extends Component {
             return item.id === state[0].id
         })
 
-        // console.log(selectedCar[0]);
         return (
             <div className="background_section">
                 <Row>
@@ -46,7 +45,6 @@ class CarDetails extends Component {
                                     alt="First slide"
                                 />
                                 <Carousel.Caption>
-                                    <h3>First slide label</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -57,7 +55,6 @@ class CarDetails extends Component {
                                 />
 
                                 <Carousel.Caption>
-                                    <h3>Second slide label</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             {/* <Carousel.Item>
@@ -84,7 +81,12 @@ class CarDetails extends Component {
                                     pathname: "/billingPage",
                                     state: [{ Id: selectedCar[0].id, Name: selectedCar[0].Name, Price: selectedCar[0].Price }]
                                 }}>
-                                <Button className="button" variant="primary" size="lg">Get Yours Now</Button>
+                                <Button
+                                    color="secondary"
+                                    size="lg"
+                                    style={{ width: "200px",height: "50px", marginLeft: "15rem", marginBottom: "2rem"}}>
+                                    Get Yours Now
+                                </Button>
                             </Link>
                             <p>Audi natural gas models combine ecology and economy: The Audi A4 Avant g-tron and A5 Sportback g-tron feature a new, sporty design and a state-of-the-art touch operating concept.</p>
                             <br />
