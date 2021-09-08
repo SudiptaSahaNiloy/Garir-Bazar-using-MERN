@@ -10,37 +10,12 @@
       "id": 1
     },
     {
-      "Name": "Laxmi Rani  Saha",
-      "Email": "laxmi@gmail.com",
-      "Password": "bangladesh",
-      "ConfirmPassword": "bangladesh",
-      "CurrentAddress": "sssss",
-      "NID": "111111111",
-      "id": 2
-    },
-    {
-      "Name": "Sudipta Saha Niloy",
-      "Email": "niloy305968@gmail.com",
-      "Password": "bangladesh",
-      "CurrentAddress": "asd",
-      "NID": "asdasdwdasdwads",
-      "id": 3
-    },
-    {
       "Name": "Nani Gopal Saha",
       "Email": "nani@gmail.com",
       "Password": "bangladesh",
       "CurrentAddress": "aaaaaaaaaaaaaa",
       "NID": "1111111111111111",
       "id": 4
-    },
-    {
-      "Name": "Sourav Saha  Nipun",
-      "Email": "nipun@gmail.com",
-      "Password": "bangladesh",
-      "CurrentAddress": "hhhhhhhhhhhhh",
-      "NID": "555555555555",
-      "id": 5
     },
     {
       "Name": "Admin",
@@ -83,14 +58,6 @@
       "id": 3
     },
     {
-      "Name": "Toyota Car 1",
-      "Price": "563626",
-      "Brand": "Toyota",
-      "Engine type": "Inline 4-cylinder engine",
-      "Image": "Images/toyotaHome.jpg",
-      "id": 4
-    },
-    {
       "Name": "Toyota Car 2",
       "Price": "1241462",
       "Brand": "Toyota",
@@ -114,6 +81,13 @@
       "customerName": "Sudipta Saha Niloy",
       "date": "Wednesday, September 8th, 2021",
       "id": 1
+    },
+    {
+      "carName": "Audi Car 2",
+      "carPrice": "6346324",
+      "customerName": "Nani Gopal Saha",
+      "date": "Wednesday, September 8th, 2021",
+      "id": 2
     }
   ]
 }

@@ -9,10 +9,22 @@ const INITIAL_STATE = {
     errorMsg: null,
     carCollection: [],
     selectedCar: null,
+    customers: [],
+    invoice: [],
 }
 
 export const reducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
+        case actionTypes.CUSTOMER_LIST:
+            return {
+                ...state,
+                customers: action.payload,
+            }
+        case actionTypes.INVOICE_LIST:
+            return {
+                ...state,
+                invoice: action.payload,
+            }
         case actionTypes.AUTH_SUCCESS:
             return {
                 ...state,
@@ -33,16 +45,16 @@ export const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 carCollection: action.payload,
             }
+        case actionTypes.LOAD_CARS:
+            return {
+                ...state,
+                carCollection: action.payload,
+            }
         case actionTypes.SELECTED_CAR:
             return {
                 ...state,
                 selectedCar: action.payload,
             }
-        // case actionTypes.LOAD_USER_DATA:
-        //     return {
-        //         ...state,
-        //         displayName: action.payload,
-        //     }
         default:
             return state;
     }
