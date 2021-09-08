@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Style/Header.css";
-import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { connect } from 'react-redux';
 import { Component } from 'react';
 import { authLogout } from '../../Redux/authActionCreator';
@@ -48,10 +48,6 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink href="/companies">Companies</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="#">Contact</NavLink>
-                            </NavItem>
-
                             {this.props.customerName !== null ?
                                 <div>
                                     <NavItem>
@@ -74,7 +70,7 @@ class Header extends Component {
                                 </NavItem>
                                 :
                                 null
-                            }                            
+                            }
                         </Nav>
                     </Collapse>
                 </div>
