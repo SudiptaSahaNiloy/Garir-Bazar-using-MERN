@@ -98,5 +98,14 @@
       "model": "Audi",
       "id": "1"
     }
+  ],
+  "Invoice": [
+    {
+      "carName": "Audi A4 Avant g-tron",
+      "carPrice": "45636436",
+      "customerName": "Sudipta Saha Niloy",
+      "date": "Wednesday, September 8th, 2021",
+      "id": 1
+    }
   ]
 }

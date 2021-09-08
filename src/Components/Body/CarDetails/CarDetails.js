@@ -82,7 +82,7 @@ class CarDetails extends Component {
                             <Link
                                 to={{
                                     pathname: "/billingPage",
-                                    state: [{ id: selectedCar[0].id }]
+                                    state: [{ Id: selectedCar[0].id, Name: selectedCar[0].Name, Price: selectedCar[0].Price }]
                                 }}>
                                 <Button className="button" variant="primary" size="lg">Get Yours Now</Button>
                             </Link>
