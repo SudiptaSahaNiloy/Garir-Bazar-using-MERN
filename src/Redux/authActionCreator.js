@@ -17,12 +17,12 @@ export const authLogout = () => {
     return ({ type: actionTypes.AUTH_LOGOUT });
 }
 
-// export const authFailed = (errMsg) => {
-//     return {
-//         type: actionTypes.AUTH_FAILED,
-//         payload: errMsg,
-//     }
-// }
+export const authFailed = (errMsg) => {
+    return {
+        type: actionTypes.AUTH_FAILED,
+        payload: errMsg,
+    }
+}
 
 export const auth = (email, password) => dispatch => {
     const URL = 'http://localhost:3001/Customer';
@@ -31,19 +31,17 @@ export const auth = (email, password) => dispatch => {
         .then(response => {
             response.data.map((item, id) => {
                 if (item.Email === email && item.Password === password) {
-                    // console.log(response.data[id]);
                     localStorage.setItem('CustomerId', response.data[id].id);
                     localStorage.setItem('CustomerName', response.data[id].Name);
                     dispatch(authSuccess(response.data[id].Name));
+                } else {
+                    dispatch(authFailed("Incorrect Email or Password. Try Again"));
+                    setTimeout(() => {
+                        dispatch(authFailed(null));
+                    }, 4000);
                 }
             })
         })
-    // .catch(error => {
-    //     dispatch(authFailed(error.response.data.error.message));
-    //     setTimeout(() => {
-    //         dispatch(authFailed(null));
-    //     }, 4000);
-    // })
 }
 
 // remember me section. Used to stay logged in

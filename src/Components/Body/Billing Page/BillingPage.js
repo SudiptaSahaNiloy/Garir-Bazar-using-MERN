@@ -2,7 +2,7 @@ import dateFormat from 'dateformat';
 import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import { Row, Col, Button } from 'reactstrap';
+import { Row, Col, Button, Alert } from 'reactstrap';
 import './styleSheet/BillingPage.css';
 import { postInvoiceInfo } from '../../../Redux/actionCreators';
 
@@ -19,16 +19,26 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 class BillingPage extends Component {
+    state = {
+        bookingComplete: false,
+    }
+
     handleOnClick = (carInfo, date) => {
-        this.props.postInvoiceInfo(carInfo.Name, carInfo.Price, this.props.customerName, date)
+        this.props.postInvoiceInfo(carInfo.Name, carInfo.Price, this.props.customerName, date);
+        this.setState({
+            bookingComplete: !this.state.bookingComplete,
+        })
     }
 
     render() {
         const { state } = this.props.location;
 
+        const alertMsg = <Alert color="success">Your Car has been Booked. Thanks for staying with us</Alert >
+
         return (
             <div className="background_image">
                 <Row className="info_section">
+                    {this.state.bookingComplete ? alertMsg : null}
                     <Col className="description_section">
                         <Table>
                             <thead>
@@ -58,7 +68,7 @@ class BillingPage extends Component {
                         <br />
                         <h4>Date of Issue</h4>
                         <h2>{dateFormat(new Date(), "dddd, mmmm dS, yyyy")}</h2>
-                        <Button onClick={() => this.handleOnClick(state[0], dateFormat(new Date(), "dddd, mmmm dS, yyyy"))}>Buy</Button>
+                        <Button onClick={() => this.handleOnClick(state[0], dateFormat(new Date(), "dddd, mmmm dS, yyyy"))}>Book</Button>
                     </Col>
                 </Row>
             </div >

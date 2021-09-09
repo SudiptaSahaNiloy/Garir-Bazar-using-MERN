@@ -32,8 +32,6 @@ class CarDetails extends Component {
             return item.id === state[0].id
         })
 
-        console.log(selectedCar);
-
         return (
             <div className="background_section">
                 <Row>

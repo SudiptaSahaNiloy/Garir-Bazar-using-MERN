@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom';
-import { Col, Row, Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Col, Row, Card, CardImg, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import './styleSheet/Admin.css';
 
 function Admin() {

@@ -88,11 +88,18 @@
   ],
   "Invoice": [
     {
+      "carName": "Audi A4 Avant g-tron",
+      "carPrice": "45636436",
+      "customerName": "Sudipta Saha Niloy",
+      "date": "Thursday, September 9th, 2021",
+      "id": 3
+    },
+    {
       "carName": "Audi Car 2",
       "carPrice": "6346324",
       "customerName": "Nani Gopal Saha",
-      "date": "Wednesday, September 8th, 2021",
-      "id": 2
+      "date": "Thursday, September 9th, 2021",
+      "id": 4
     }
   ]
 }

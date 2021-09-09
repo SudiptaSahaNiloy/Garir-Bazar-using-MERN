@@ -1,9 +1,15 @@
 import { Formik } from 'formik';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button, Form, FormGroup, Input, Col, Row } from 'reactstrap';
+import { Button, Form, FormGroup, Input, Col, Row, Alert } from 'reactstrap';
 import { auth, userData } from '../../../Redux/authActionCreator';
 import './Stylesheet/Auth.css';
+
+const mapStateToProps = (state) => {
+    return{
+        errorMsg: state.errorMsg,
+    }
+}
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -163,11 +169,12 @@ class Auth extends Component {
             )
         }
 
-        // const alertMsg = <Alert color="danger">{this.props.errorMsg}</Alert>;
+        const alertMsg = <Alert color="danger">{this.props.errorMsg}</Alert>;
 
         return (
             <div className="login-section">
                 <div className="row">
+                    {this.props.errorMsg !== null ? alertMsg : null}
                     <div className="col-md-8 login-image-section">
                         <img src="Images/Login.jpg" className="img-fluid" alt="Login_Car" />
                     </div>
@@ -248,4 +255,4 @@ class Auth extends Component {
 
 }
 
-export default connect(null, mapDispatchToProps)(Auth);
+export default connect(mapStateToProps, mapDispatchToProps)(Auth);

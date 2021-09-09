@@ -45,11 +45,6 @@ export const reducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 carCollection: action.payload,
             }
-        case actionTypes.LOAD_CARS:
-            return {
-                ...state,
-                carCollection: action.payload,
-            }
         case actionTypes.SELECTED_CAR:
             return {
                 ...state,
