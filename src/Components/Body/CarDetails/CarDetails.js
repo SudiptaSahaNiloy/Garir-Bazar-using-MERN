@@ -32,6 +32,8 @@ class CarDetails extends Component {
             return item.id === state[0].id
         })
 
+        console.log(selectedCar);
+
         return (
             <div className="background_section">
                 <Row>
@@ -41,7 +43,7 @@ class CarDetails extends Component {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    src="Images/audi1.jpg"
+                                    src={selectedCar[0].Image}
                                     alt="First slide"
                                 />
                                 <Carousel.Caption>
@@ -50,7 +52,7 @@ class CarDetails extends Component {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    src="Images/audi2.jpg"
+                                    src={selectedCar[0].Image}
                                     alt="Second slide"
                                 />
 
@@ -88,9 +90,9 @@ class CarDetails extends Component {
                                     Get Yours Now
                                 </Button>
                             </Link>
-                            <p>Audi natural gas models combine ecology and economy: The Audi A4 Avant g-tron and A5 Sportback g-tron feature a new, sporty design and a state-of-the-art touch operating concept.</p>
+                            <p>{selectedCar[0].description1}</p>
                             <br />
-                            <p>Audi A4 Avant g-tron: CNG consumption in kg/100 km: 4.1 -3.9; combined CO2 emissions in g/km (CNG): 113-105 Information on fuel/electricity consumption and CO2 emissions in ranges depending on the used combination of wheels/tires</p>
+                            <p>{selectedCar[0].description2}</p>
                         </div>
                     </Col>
                 </Row>
@@ -106,39 +108,39 @@ class CarDetails extends Component {
                             <tbody>
                                 <tr>
                                     <td>Engine type</td>
-                                    <td>Inline 4-cylinder engine</td>
+                                    <td>{selectedCar[0].engineType}</td>
                                 </tr>
                                 <tr>
                                     <td>Max. power output in kW (hp) / at rpm</td>
-                                    <td>125 (170) / 4450 - 6000</td>
+                                    <td>{selectedCar[0].maxPowerOutput}</td>
                                 </tr>
                                 <tr>
                                     <td>Displacement in cc / bore x stroke in mm / compression	</td>
-                                    <td>	1984 / 82.5 x 92.8 / 12.6</td>
+                                    <td>	{selectedCar[0].displacement}</td>
                                 </tr>
                                 <tr>
                                     <td>Max. torque in Nm (lb-ft) / at rpm</td>
-                                    <td>270 (199.1) / 1650 - 4400</td>
+                                    <td>{selectedCar[0].maxTorque}</td>
                                 </tr>
                                 <tr>
                                     <td>Top speed in km/h (mph)</td>
-                                    <td>210 (130.5)</td>
+                                    <td>{selectedCar[0].topSpeed}</td>
                                 </tr>
                                 <tr>
                                     <td>Acceleration, 0-100 km/h (0-62.1 mph) in sec</td>
-                                    <td>8.4</td>
+                                    <td>{selectedCar[0].acceleration}</td>
                                 </tr>
                                 <tr>
                                     <td>CNG consumption in kg/100 km</td>
-                                    <td>4.1 - 3.9</td>
+                                    <td>{selectedCar[0].CNGconsumption}</td>
                                 </tr>
                                 <tr>
                                     <td>Combined CO2-emissions in g/km (CNG)</td>
-                                    <td>111 - 105</td>
+                                    <td>{selectedCar[0].combinedCO2Emissions}</td>
                                 </tr>
                                 <tr>
                                     <td>Unladen weight according to EU (excluding driver) / (including driver) / gross weight limit in kg (lb)</td>
-                                    <td>1590 (3505.3) / 1665 (3670.7) / 2140 (4717.9)</td>
+                                    <td>{selectedCar[0].unladenWeight}</td>
                                 </tr>
                             </tbody>
                         </Table>
@@ -146,7 +148,7 @@ class CarDetails extends Component {
                     <Col>
                         {/* top youtube section */}
                         <div className="iframe-container">
-                            <iframe src="https://www.youtube.com/embed/hQwtBeAgBKA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe src={selectedCar[0].youtubeLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </Col>
                 </Row>
