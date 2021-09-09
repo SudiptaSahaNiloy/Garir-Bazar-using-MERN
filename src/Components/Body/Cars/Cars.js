@@ -35,7 +35,8 @@ class Cars extends Component {
                     <div className="cars_infoTop">
                         <h3>{this.props.Name}</h3>
                         <p>____</p>
-                        <p>audi car description</p>
+                        <p>Dealer: {this.props.dealerName}</p>
+                        <p>Dealer Phone Number: {this.props.dealerPhoneNumber}</p>
                     </div>
                     <div className="cars_infoBottom">
                         <div className="cars_price">

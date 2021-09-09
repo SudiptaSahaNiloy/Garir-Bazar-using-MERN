@@ -10,14 +10,6 @@
       "id": 1
     },
     {
-      "Name": "Nani Gopal Saha",
-      "Email": "nani@gmail.com",
-      "Password": "bangladesh",
-      "CurrentAddress": "aaaaaaaaaaaaaa",
-      "NID": "1111111111111111",
-      "id": 4
-    },
-    {
       "Name": "Admin",
       "Email": "admin@gmail.com",
       "Password": "admin",
@@ -36,6 +28,8 @@
   ],
   "CarCollection": [
     {
+      "dealerName": "Fahim hossian",
+      "dealerPhoneNumber": "01749450739",
       "Name": "Audi A4 Avant g-tron",
       "Price": "45636436",
       "Brand": "Audi",
@@ -52,38 +46,58 @@
       "description1": "Audi natural gas models combine ecology and economy: The Audi A4 Avant g-tron and A5 Sportback g-tron feature a new, sporty design and a state-of-the-art touch operating concept.",
       "description2": "Audi A4 Avant g-tron: CNG consumption in kg/100 km: 4.1 -3.9; combined CO2 emissions in g/km (CNG): 113-105 Information on fuel/electricity consumption and CO2 emissions in ranges depending on the used combination of wheels/tires",
       "Image": "Images/audi1.jpg",
+      "Image2": "https://audimediacenter-a.akamaihd.net/system/production/media/43094/images/050f1652d76aa7d4ea12e81bab2bf9c8cc5e4ff0/A171597_blog.jpg?1582327537",
+      "Image3": "https://audimediacenter-a.akamaihd.net/system/production/media/43104/images/be4842c7172323b800fd01fcbcea3980dd9defe2/A171607_full.jpg?1582327582",
+      "Image4": "https://gazeo.com/images/gazeo_2015_EN/Automotive/Vehicles/Audi_A4_Avant_g_tron_new_old_stock/Audi-A4-Avant-6.jpg",
       "id": 1
     },
     {
-      "Name": "Audi Car 2",
+      "dealerName": "Fahim hossian",
+      "dealerPhoneNumber": "01749450739",
+      "Name": "Audi A3 Sedan",
       "Price": "6346324",
       "Brand": "Audi",
-      "Image": "Images/audi2.jpg",
+      "engineType": "Inline 3-cylinder engine",
+      "maxPowerOutput": "81 (110) / 5500",
+      "displacement": "999 / 74.5 x 76.4 / 11.5",
+      "maxTorque": "200 (147.5) / 2000 - 3000",
+      "topSpeed": "210 (130.5)",
+      "acceleration": "10.6",
+      "CNGconsumption": "4.9 - 4.7",
+      "combinedCO2Emissions": "112 - 107",
+      "unladenWeight": "1225 (2700.7) / 1300 (2866.0) / 1775 (3913.2)",
+      "youtubeLink": "https://www.youtube.com/embed/bR_5xH98MhY",
+      "description1": "The second generation of an Audi success story is here – the A3 Sedan. The compact four-door model is digitally and fully connected – from the infotainment through to the assist systems. Beneath the elegant body, new drives and refined suspension tuning ensure a driving experience that is as efficient as it is dynamic. The A3 Sedan will be on the lots of Asian dealerships beginning in summer 2020.",
+      "description2": "Combined fuel consumption in l/100 km: 5.0 – 3.6; Combined CO2 emissions in g/km: 114 – 96; Information on fuel consumption and CO2 emissions as well as efficiency classes in ranges depending on the tires and alloy wheel rims used.",
+      "Image": "Images/a3.jpg",
+      "Image2": "https://www.ccarprice.com/products/Audi-A3-Sportback-2021_1.jpg",
+      "Image3": "Images/a3.jpg",
+      "Image4": "https://s1.cdn.autoevolution.com/images/models/AUDI_A3-Sedan-2020_main.jpg",
       "id": 2
     },
     {
-      "Name": "Audi Car 3",
-      "Price": "939219",
-      "Brand": "Audi",
-      "Engine type": "Inline 4-cylinder engine",
-      "Image": "Images/audi3.jpg",
-      "id": 3
-    },
-    {
-      "Name": "Toyota Car 2",
+      "dealerName": "Sudipta",
+      "dealerPhoneNumber": "01711177781",
+      "Name": "Toyota Allion",
       "Price": "1241462",
       "Brand": "Toyota",
-      "Engine type": "Inline 4-cylinder engine",
-      "Image": "Images/allion.jpg",
-      "id": 5
-    }
-  ],
-  "Dealer": [
-    {
-      "Name": "Fahim hossian",
-      "PhoneNumber": "01749450739",
-      "model": "Audi",
-      "id": "1"
+      "engineType": "2.0-liter four-cylinder engine",
+      "maxPowerOutput": "109 PS (108 bhp - 80 kW) at 6200 rpm",
+      "displacement": "999 / 74.5 x 76.4 / 11.5",
+      "maxTorque": "141.0 Nm (103 lb. ft) at 6200 rpm.",
+      "topSpeed": "180 km/h",
+      "acceleration": "10.6",
+      "CNGconsumption": "6.8 - 7.0",
+      "combinedCO2Emissions": "5.56 litre/100km (18.0 km/litre)",
+      "unladenWeight": "N/A",
+      "youtubeLink": "https://www.youtube.com/embed/HNbSHDEt_QE",
+      "description1": "TOYOTA MOTOR CORPORATION (TMC) announced today the nationwide launch in Japan of the completely redesigned Allion through Toyota dealers.",
+      "description2": "The front line of the hood forms a broad arc while the headlights, lower grille, and bumper form a large T shape to convey a refined and sporty feel.The side view features a body that narrows toward the rear, combined with overhanging rear fenders and rear wheel housings that are highlighted by the way they extend into the lower portion of the rear doors, evoking a sense of energy.The rear has a uniform surface that extends from the rear pillar to the trunk, and together with the three-dimensional combination taillights, creates a sense of solidity.",
+      "Image": "https://cdn.carsbite.com/articles/37132_1024x0_1_q95_autohomecar__ChwEmWBTW5SAeFe6AB3FBtH8YAM313.jpg",
+      "Image2": "Images/allion.jpg",
+      "Image3": "https://img.favcars.com/toyota/allion/photos_toyota_allion_2007_1_b.jpg",
+      "Image4": "https://s.car.info/image_files/full/toyota-allion-front-side-0-696405.jpg",
+      "id": 3
     }
   ],
   "Invoice": [

@@ -23,6 +23,7 @@ class CarDetails extends Component {
     componentDidMount() {
         this.props.Car();
     }
+
     render() {
         const { state } = this.props.location;
 
@@ -41,34 +42,24 @@ class CarDetails extends Component {
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    src={selectedCar[0].Image}
-                                    alt="First slide"
+                                    src={selectedCar[0].Image2}
+                                    alt="Second slide"
                                 />
-                                <Carousel.Caption>
-                                </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
-                                    src={selectedCar[0].Image}
+                                    src={selectedCar[0].Image3}
                                     alt="Second slide"
                                 />
-
-                                <Carousel.Caption>
-                                </Carousel.Caption>
                             </Carousel.Item>
-                            {/* <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src="Images/audi3.jpg"
-                                alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item> */}
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={selectedCar[0].Image4}
+                                    alt="Second slide"
+                                />
+                            </Carousel.Item>
                         </Carousel>
                     </Col>
                     <Col>
@@ -100,7 +91,7 @@ class CarDetails extends Component {
                         {/* Table section  */}
                         <div className="table_section">
                             <h1>Technical feature</h1>
-                            <p>Audi A4 Avant g-tron 40 g-tron S tronic (125 kW)</p>
+                            {/* <p>Audi A4 Avant g-tron 40 g-tron S tronic (125 kW)</p> */}
                         </div>
                         <Table>
                             <tbody>

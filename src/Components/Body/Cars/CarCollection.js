@@ -34,7 +34,14 @@ class CarCollection extends Component {
 
         brandedCarStock = brandedCars.map((item) => {
             return (
-                <Cars id={item.id} key={item.id} Name={item.Name} Price={item.Price} Image={item.Image} />
+                <Cars
+                    id={item.id}
+                    key={item.id}
+                    Name={item.Name}
+                    Price={item.Price}
+                    Image={item.Image}
+                    dealerName={item.dealerName}
+                    dealerPhoneNumber={item.dealerPhoneNumber} />
             )
         })
 
