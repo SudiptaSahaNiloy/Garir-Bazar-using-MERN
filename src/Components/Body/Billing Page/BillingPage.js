@@ -17,7 +17,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         postInvoiceInfo: (carName, carPrice, customerName, date) => dispatch(postInvoiceInfo(carName, carPrice, customerName, date)),
-        getInvoice: () => dispatch(getInvoice(),)
+        getInvoice: () => dispatch(getInvoice())
     }
 }
 
@@ -26,8 +26,11 @@ class BillingPage extends Component {
         bookingComplete: false,
     }
 
-    handleOnClick = (carInfo, date, Price) => {
+    componentDidMount(){
         this.props.getInvoice();
+    }
+
+    handleOnClick = (carInfo, date, Price) => {
         this.props.postInvoiceInfo(carInfo.Name, Price, this.props.customerName, date);
         this.setState({
             bookingComplete: !this.state.bookingComplete,
@@ -42,11 +45,13 @@ class BillingPage extends Component {
         let oldCustomer = null;
 
         oldCustomer = this.props.invoice.filter((item) => {
-            return item.customerName === this.props.customerName
+            return item.customerName === this.props.customerName;
         })
 
         let discount = 0.2;
         let discountedPrice = null;
+
+        // console.log(this.props.invoice);
 
         if (oldCustomer.length === 0) {
             discountedPrice = state[0].Price;
