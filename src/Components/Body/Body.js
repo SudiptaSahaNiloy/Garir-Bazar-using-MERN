@@ -50,8 +50,9 @@ class Body extends Component {
         else {
             routes = (
                 <Switch>
+                    <Route path="/home" exact component={Home} />
                     <Route path="/login" exact component={Auth} />
-                    {/* <Redirect to="/login" /> */}
+                    {/* <Redirect to="/home" /> */}
                 </Switch>
             )
         }
