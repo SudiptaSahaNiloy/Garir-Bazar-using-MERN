@@ -24,6 +24,14 @@
       "CurrentAddress": "ctg",
       "NID": "123456789",
       "id": 7
+    },
+    {
+      "Name": "Sourav Saha  Nipun",
+      "Email": "sourav@gmail.com",
+      "Password": "bangladesh",
+      "CurrentAddress": "3/7 lalmatia",
+      "NID": "9604126279",
+      "id": 8
     }
   ],
   "CarCollection": [
@@ -114,6 +122,27 @@
       "customerName": "Nani Gopal Saha",
       "date": "Thursday, September 9th, 2021",
       "id": 4
+    },
+    {
+      "carName": "Toyota Allion",
+      "carPrice": "1241462",
+      "customerName": "Sudipta Saha Niloy",
+      "date": "Friday, September 10th, 2021",
+      "id": 5
+    },
+    {
+      "carName": "Audi A3 Sedan",
+      "carPrice": "6346324",
+      "customerName": "Sourav Saha  Nipun",
+      "date": "Friday, September 10th, 2021",
+      "id": 6
+    },
+    {
+      "carName": "Audi A4 Avant g-tron",
+      "carPrice": 36509148.8,
+      "customerName": "Sudipta Saha Niloy",
+      "date": "Friday, September 10th, 2021",
+      "id": 7
     }
   ]
 }
